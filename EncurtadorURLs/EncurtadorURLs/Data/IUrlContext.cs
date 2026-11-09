@@ -11,4 +11,7 @@ public interface IUrlContext
 {
     Task<bool> ShortCodeExistsAsync(string shortCode);
     Task AddAsync(UrlItem item);
+
+    // Adicionado no Exercício 2:
+    Task<UrlItem?> GetByIdAsync(Guid id);
 }
